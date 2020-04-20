@@ -11,6 +11,11 @@ Instead of setting up an email server on an EC2 instance to handle email
 redirects, use SES to receive email, and the included Lambda script to process
 it and send it on to the chosen destination.
 
+## BUild
+yarn --production=true
+yarn run build
+(upload zip to lambda)
+
 ## Limitations
 
 - SES only allows sending email from addresses or domains that are verified.
